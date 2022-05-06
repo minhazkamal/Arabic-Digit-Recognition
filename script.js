@@ -61,7 +61,7 @@ let model;
 
 /* Loads trained model */
 async function init() {
-  model = await tf.loadModel('https://raw.githubusercontent.com/minhazkamal/Arabic-Digit-Recognition/main/model/model.json');
+  model = await tf.loadModel('https://minhazkamal.github.io/Arabic-Digit-Recognition/model/model.json');
 }
 
 
