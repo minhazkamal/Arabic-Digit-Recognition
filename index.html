@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>H U R U F</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.13.5"> </script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+</head>
+
+<body>
+  <h1>Digit Recognition</h1>
+  <p>Digit recognition using Convolutional Neural Networks. Built with Keras and TensorFlow.js</p>
+  
+  <section>
+    <canvas id="main-canvas" width="300" height="300"></canvas>
+    <canvas id="small-main-canvas" width="64" height="64"></canvas>
+    <canvas id="small-canvas" width="64" height="64"></canvas>
+    <div id="prediction"></div>
+    <h2 id="label"></h2>
+  </section>
+
+  <button id="erase">Clear</button>
+  <button id="predict">Predict</button>
+  <script src="script.js"></script>
+  <script src="image_class.js"></script>
+</body>
+
+</html>
