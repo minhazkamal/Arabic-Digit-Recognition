@@ -61,7 +61,7 @@ let model;
 
 /* Loads trained model */
 async function init() {
-  model = await tf.loadModel('https://minhazkamal.github.io/Arabic-Digit-Recognition/model/model.json');
+  model = await tf.loadModel('https://raw.githubusercontent.com/minhazkamal/Arabic-Digit-Recognition/main/model/model.json');
 }
 
 
@@ -129,7 +129,7 @@ function updateDisplay() {
   // console.log(predictions);
   const bestPred = predictions.indexOf(Math.max(...predictions));
   displayBox.innerText = bestPred;
-  label.innerText = IMAGE_CLASSES[bestPred];
+  label.innerText = ARB_NUMBER_CLASSES[bestPred];
 }
 
 document.getElementById('erase').addEventListener('click', erase);
